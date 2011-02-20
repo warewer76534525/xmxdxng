@@ -1,0 +1,13 @@
+<LinearLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:background="@drawable/app_background">
+	<TextView android:id="@+id/txtPickgroup" android:layout_height="wrap_content" android:padding="5dp"
+		android:text="Klik nama Group untuk memilih." android:textColor="#FFFFFF" android:layout_width="fill_parent"></TextView>
+	<ListView android:id="@+id/listViewGroup"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="#00000000" android:cacheColorHint="#00000000"
+		android:divider="@drawable/divider">
+	</ListView>
+	
+</LinearLayout>

@@ -1,0 +1,42 @@
+<ScrollView android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:background="@drawable/app_background"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:orientation="vertical">
+		<LinearLayout android:id="@+id/LinearLayout03"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:padding="5dp" android:orientation="vertical">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textColor="#FFFFFF"
+				android:textStyle="bold" android:id="@+id/txtConfirmationTitle"
+				android:layout_gravity="center_horizontal"></TextView>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textColor="#FFFFFF"
+				android:id="@+id/txtSMSContent" android:layout_gravity="center_horizontal"></TextView>
+
+		</LinearLayout>
+		<LinearLayout android:id="@+id/LinearLayout02"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:gravity="center_horizontal" android:layout_gravity="center_horizontal">
+			<FrameLayout android:id="@+id/FrameLayout01"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:padding="5dp">
+				<Button android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="Kirim"
+					android:id="@+id/btnSend" android:textColor="#FFFFFF"
+					android:background="@drawable/button_brown"></Button>
+			</FrameLayout>
+			<FrameLayout android:id="@+id/FrameLayout02"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:padding="5dp">
+				<Button android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="Batal"
+					android:id="@+id/btnCancel" android:textColor="#FFFFFF"
+					android:background="@drawable/button_brown"></Button>
+			</FrameLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+</ScrollView>

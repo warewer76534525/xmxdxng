@@ -1,0 +1,14 @@
+<LinearLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:padding="5dp">
+	<FrameLayout android:id="@+id/FrameLayout01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:padding="5dp">
+		<ImageView android:id="@+id/ImageView01"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/menu1"></ImageView>
+	</FrameLayout>
+	<TextView android:layout_height="wrap_content"
+		android:textColor="#FFFFFF" android:layout_gravity="center_vertical" android:textStyle="bold"
+		android:typeface="normal" android:layout_width="fill_parent"
+		android:textSize="16sp" android:text="group" android:id="@+id/txtGroup" android:padding="5dp"></TextView>
+</LinearLayout>

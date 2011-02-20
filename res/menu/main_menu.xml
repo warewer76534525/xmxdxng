@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/menuMySchedule"
+    	android:title="Schedule Saya"
+    	android:icon="@drawable/menu4" />
+	<item android:id="@+id/menuSpecialEvent"
+    	android:title="Schedule Special Event"
+    	android:icon="@drawable/menu2" />
+    <item android:id="@+id/menuGroup"
+    	android:title="Group" 
+    	android:icon="@drawable/menu1"/>
+    <item android:id="@+id/menuTemplate"
+    	android:title="Template SMS" 
+    	android:icon="@drawable/envelope"/>
+    <item android:id="@+id/menuTellFriend"
+        android:title="Beritahu Teman"
+        android:icon="@drawable/menu6" />
+    <item android:id="@+id/menuFeedback"
+        android:title="Kritik dan Saran"
+        android:icon="@drawable/menu3" />
+    <item android:id="@+id/menuClearLog"
+        android:title="Clear Log" />
+</menu>

@@ -1,0 +1,23 @@
+<RelativeLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/RelativeLayout01" android:background="@drawable/app_background">
+	<ListView android:layout_height="wrap_content" 
+		android:id="@+id/listViewContact"
+		android:layout_width="fill_parent" 
+		android:layout_alignParentTop="true" 
+		android:layout_above="@+id/layoutButton"
+		android:background="#00000000"
+		android:cacheColorHint="#00000000" 
+		android:divider="@drawable/divider">
+	</ListView>
+	<FrameLayout android:id="@+id/layoutButton"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:layout_alignParentBottom="true"
+		android:padding="5dp">
+		<Button android:text="Pilih" 
+			android:id="@+id/btnPickContact"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"></Button>
+	</FrameLayout>
+</RelativeLayout>

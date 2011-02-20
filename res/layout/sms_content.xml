@@ -1,0 +1,70 @@
+<LinearLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:background="@drawable/app_background">
+	<RelativeLayout android:id="@+id/RelativeLayout06"
+		android:layout_width="fill_parent" android:background="#281300"
+		android:layout_height="wrap_content">
+		<TextView android:layout_height="wrap_content"
+			android:textColor="#FFFFFF" android:textStyle="bold"
+			android:layout_width="wrap_content" android:padding="5dp" android:text="title" android:id="@+id/txtTitleIsi" android:layout_centerVertical="true" android:layout_toLeftOf="@+id/layoutClipboard" android:layout_alignParentLeft="true">
+		</TextView>
+		
+	<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:id="@+id/layoutClipboard"><ImageButton android:id="@+id/btnClipBoard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:src="@drawable/clipboard" android:padding="5dp"></ImageButton></FrameLayout>
+</RelativeLayout>
+	<ScrollView android:id="@+id/ScrollView01"
+		android:layout_height="wrap_content" android:layout_width="fill_parent">
+		<LinearLayout android:id="@+id/LinearLayout02"
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:orientation="vertical">
+			<FrameLayout android:id="@+id/FrameLayout01"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:padding="5dp">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="sms"
+					android:textColor="#FFFFFF" android:id="@+id/txtSMSContent"></TextView>
+			</FrameLayout>
+			<FrameLayout android:id="@+id/FrameLayout07"
+				android:layout_width="fill_parent" android:layout_height="1px"
+				android:paddingLeft="10dp" android:paddingRight="10dp">
+				<ImageView android:id="@+id/ImageView01"
+					android:layout_width="fill_parent" android:layout_height="1px"
+					android:background="@drawable/divider"></ImageView>
+			</FrameLayout>
+			<LinearLayout android:id="@+id/LinearLayout03"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal">
+				<FrameLayout android:id="@+id/FrameLayout04"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:paddingRight="5dp">
+					<CheckBox android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textSize="14sp"
+						android:text="Al4y M0de" android:id="@+id/ckAlay"></CheckBox>
+				</FrameLayout>
+				<FrameLayout android:id="@+id/FrameLayout05"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:paddingLeft="5dp">
+					<CheckBox android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textSize="14sp"
+						android:text="Anti Alay" android:id="@+id/ckAntiAlay"></CheckBox>
+				</FrameLayout>
+			</LinearLayout>
+			<FrameLayout android:id="@+id/FrameLayout02"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center" android:padding="5dp">
+				<Button android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="#FFFFFF"
+					android:background="@drawable/button_brown" android:id="@+id/btnSendToContact"
+					android:text="Kirim ke Contact"></Button>
+			</FrameLayout>
+			<FrameLayout android:id="@+id/FrameLayout03"
+				android:layout_height="wrap_content" android:padding="5dp"
+				android:layout_width="wrap_content" android:layout_gravity="center_horizontal">
+				<Button android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+					android:text="Kirim ke Group" android:textColor="#FFFFFF"
+					android:id="@+id/btnSendToGroup" android:background="@drawable/button_brown"></Button>
+			</FrameLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<LinearLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content">
+	<FrameLayout android:id="@+id/FrameLayout01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:padding="5dp">
+		<CheckBox android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/ckBoxContact"></CheckBox>
+	</FrameLayout>
+	<LinearLayout android:id="@+id/LinearLayout02"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:orientation="vertical" android:layout_gravity="center_vertical"
+		android:padding="5dp">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="name"
+			android:textColor="#FFFFFF" android:textStyle="bold" android:id="@+id/txtName"></TextView>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="number"
+			android:id="@+id/txtNumber" android:textColor="#FFFF00"></TextView>
+	</LinearLayout>
+</LinearLayout>

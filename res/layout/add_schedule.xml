@@ -1,0 +1,193 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ScrollView01" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/app_background">
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:orientation="vertical">
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:orientation="vertical"
+			android:id="@+id/layoutDescCategory" android:visibility="visible">
+			<FrameLayout android:id="@+id/FrameLayout06"
+				android:layout_width="fill_parent" android:background="#281300"
+				android:layout_height="25dp">
+				<TextView android:layout_height="wrap_content"
+					android:textColor="#FFFFFF" android:textStyle="bold"
+					android:layout_width="wrap_content" android:paddingRight="5dp"
+					android:id="@+id/txtTitleAdd" android:layout_gravity="center_vertical|right"
+					android:text="Tambah Schedule - Deskripsi"></TextView>
+			</FrameLayout>
+			<FrameLayout android:id="@+id/FrameLayout01"
+				android:layout_width="fill_parent" android:layout_height="1px"
+				android:background="#FFFFFF"></FrameLayout>
+			<LinearLayout android:id="@+id/LinearLayout05"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:orientation="vertical" android:padding="5dp">
+				<LinearLayout android:id="@+id/LinearLayout03"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:padding="5dp">
+					<TextView android:id="@+id/TextView02"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:textColor="#FFFFFF" android:text="Nama Schedule : "></TextView>
+					<EditText android:layout_height="wrap_content" android:id="@+id/txtScheduleName"
+						android:layout_width="fill_parent"></EditText>
+				</LinearLayout>
+				<LinearLayout android:id="@+id/LinearLayout04"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:padding="5dp" android:orientation="vertical">
+					<LinearLayout android:id="@+id/LinearLayout02"
+						android:layout_width="wrap_content" android:layout_height="wrap_content">
+						<TextView android:id="@+id/TextView03"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:textColor="#FFFFFF" android:layout_gravity="center"
+							android:text="Pesan : "></TextView>
+						<FrameLayout android:id="@+id/FrameLayout05"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:paddingLeft="5dp">
+							<ImageButton android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:id="@+id/btnPickMessage"
+								android:background="@drawable/message"></ImageButton>
+						</FrameLayout>
+					</LinearLayout>
+					<EditText android:layout_width="fill_parent" android:id="@+id/txtScheduleMessage"
+						android:singleLine="false" android:layout_height="125dp"></EditText>
+					<LinearLayout android:id="@+id/LinearLayout02"
+						android:layout_width="fill_parent" android:layout_height="wrap_content">
+						<FrameLayout android:id="@+id/FrameLayout04"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:paddingRight="5dp">
+							<CheckBox android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:textSize="14sp"
+								android:text="Al4y M0de" android:id="@+id/ckAlay"></CheckBox>
+						</FrameLayout>
+						<FrameLayout android:id="@+id/FrameLayout05"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:paddingLeft="5dp">
+							<CheckBox android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:textSize="14sp"
+								android:text="Anti Alay" android:id="@+id/ckAntiAlay"></CheckBox>
+						</FrameLayout>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout android:id="@+id/LinearLayout04"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:padding="5dp" android:orientation="vertical">
+					<LinearLayout android:id="@+id/LinearLayout07"
+						android:layout_width="wrap_content" android:layout_height="wrap_content">
+						<TextView android:id="@+id/TextView03"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:textColor="#FFFFFF" android:text="Tujuan :  "
+							android:layout_gravity="center_vertical"></TextView>
+						<ImageButton android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:id="@+id/btnPickNo"
+							android:src="@drawable/contacts_single" android:padding="7dp">
+						</ImageButton>
+						<ImageButton android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:id="@+id/btnPickGroup"
+							android:padding="7dp" android:src="@drawable/contact_group"></ImageButton>
+					</LinearLayout>
+					<EditText android:layout_height="wrap_content"
+						android:layout_width="fill_parent" android:id="@+id/txtScheduleDestination"
+						android:editable="false"></EditText>
+				</LinearLayout>
+			</LinearLayout>
+			<FrameLayout android:id="@+id/FrameLayout04"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal" android:padding="5dp">
+				<Button android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:background="@drawable/button_brown"
+					android:id="@+id/btnNextCategory" android:textColor="#FFFFFF"
+					android:text="Selanjutnya"></Button>
+			</FrameLayout>
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:orientation="vertical"
+			android:id="@+id/layoutTimeCategory" android:visibility="gone">
+			<RelativeLayout android:id="@+id/FrameLayout06"
+				android:layout_width="fill_parent" android:background="#281300"
+				android:layout_height="wrap_content">
+				<FrameLayout android:id="@+id/FrameLayout07"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true">
+					<ImageButton android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/btnBackCategory"
+						android:background="@drawable/back"></ImageButton>
+				</FrameLayout>
+				<TextView android:layout_height="wrap_content"
+					android:textColor="#FFFFFF" android:textStyle="bold"
+					android:layout_width="wrap_content" android:id="@+id/txtTitleAdd"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true" android:paddingRight="5dp"
+					android:text="Tambah Schedule - Waktu"></TextView>
+			</RelativeLayout>
+			<FrameLayout android:id="@+id/FrameLayout01"
+				android:layout_width="fill_parent" android:layout_height="1px"
+				android:background="#FFFFFF"></FrameLayout>
+			<LinearLayout android:id="@+id/LinearLayout05"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:orientation="vertical">
+				<RelativeLayout android:id="@+id/RelativeLayout03"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:padding="5dp">
+					<TextView android:id="@+id/txtSetDate"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:textColor="#FFFFFF" android:text="Tanggal Schedule : "
+						android:gravity="center_vertical" android:layout_centerVertical="true"></TextView>
+					<EditText android:layout_height="wrap_content"
+						android:layout_width="150dp" android:id="@+id/txtScheduleDate"
+						android:editable="false" android:layout_toRightOf="@+id/txtSetDate"
+						android:layout_toLeftOf="@+id/btnSetDate"></EditText>
+					<Button android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="Set"
+						android:id="@+id/btnSetDate" android:layout_alignParentRight="true"></Button>
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/RelativeLayout03"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:padding="5dp">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textColor="#FFFFFF"
+						android:text="Waktu Schedule :   " android:id="@+id/txtSetTime"
+						android:layout_centerVertical="true"></TextView>
+					<EditText android:layout_height="wrap_content"
+						android:layout_width="150dp" android:id="@+id/txtScheduleTime"
+						android:editable="false" android:layout_toRightOf="@+id/txtSetTime"
+						android:layout_toLeftOf="@+id/btnSetTime"></EditText>
+					<Button android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="Set"
+						android:id="@+id/btnSetTime" android:layout_alignParentRight="true"></Button>
+				</RelativeLayout>
+				<LinearLayout android:id="@+id/LinearLayout04"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:padding="5dp" android:visibility="gone">
+					<TextView android:id="@+id/TextView03"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="Interval Pengiriman: " android:layout_gravity="center_vertical"
+						android:textColor="#FFFFFF"></TextView>
+
+					<Spinner android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/cbInterval"></Spinner>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/LinearLayout06"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal">
+				<FrameLayout android:id="@+id/FrameLayout02"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:padding="5dp">
+					<Button android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="Review Schedule"
+						android:id="@+id/btnSummary" android:background="@drawable/button_brown"
+						android:textColor="#FFFFFF" android:visibility="gone"></Button>
+				</FrameLayout>
+				<FrameLayout android:id="@+id/FrameLayout03"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:padding="5dp">
+					<Button android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="Simpan Schedule"
+						android:id="@+id/btnSave" android:background="@drawable/button_brown"
+						android:textColor="#FFFFFF"></Button>
+				</FrameLayout>
+			</LinearLayout>
+		</LinearLayout>
+
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,25 @@
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/app_background" android:id="@+id/LinearLayout01" android:orientation="vertical">
+	
+<RelativeLayout android:id="@+id/RelativeLayout01" android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="#281300"><TextView android:id="@+id/TextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tambah Group" android:textColor="#FFFFFF" android:textSize="17sp" android:textStyle="bold" android:padding="5dp"></TextView>
+</RelativeLayout><ScrollView android:id="@+id/ScrollView02" android:layout_height="wrap_content" android:layout_width="fill_parent">
+		<LinearLayout android:id="@+id/LinearLayout01" android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="vertical">
+			<LinearLayout android:id="@+id/LinearLayout02" android:layout_height="wrap_content" android:layout_width="fill_parent" android:padding="5dp">
+				<TextView android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nama Group :  " android:textColor="#FFFFFF"></TextView>
+				<EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/txtGroupName"></EditText>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/LinearLayout03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp">
+				<TextView android:id="@+id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Anggota Group: " android:textColor="#FFFFFF" android:layout_gravity="center_vertical"></TextView>
+				<ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnPickMember" android:padding="7dp" android:src="@drawable/contacts_single"></ImageButton>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/LinearLayout04" android:layout_height="wrap_content" android:layout_width="fill_parent" android:padding="10dp">
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtContactList" android:textColor="#FFFFFF" android:text="Belum ada anggota. Silahkan klik tombol di atas."></TextView>
+			</LinearLayout>
+			<FrameLayout android:id="@+id/FrameLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+				<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnSaveGroup" android:text="Simpan" android:textColor="#FFFFFF" android:background="@drawable/button_brown"></Button>
+			</FrameLayout>
+			<ListView android:id="@+id/ListView01" android:layout_height="wrap_content" android:layout_width="fill_parent"></ListView>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

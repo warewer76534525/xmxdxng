@@ -1,0 +1,34 @@
+<LinearLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/app_background" android:orientation="vertical">
+	<RelativeLayout android:id="@+id/FrameLayout06"
+		android:layout_width="fill_parent" android:background="#281300"
+		android:layout_height="wrap_content">
+		<ImageButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/back"
+			android:id="@+id/btnBackTemplate">
+		</ImageButton>
+		<TextView android:layout_height="wrap_content"
+			android:textColor="#FFFFFF" android:textStyle="bold"
+			android:layout_width="wrap_content" android:layout_gravity="center_vertical"
+			android:id="@+id/txtSubTitleTemplate" android:padding="5dp"
+			android:layout_alignParentRight="true" android:text="Template SMS">
+		</TextView>
+
+	</RelativeLayout>
+	<FrameLayout android:id="@+id/FrameLayout01"
+		android:layout_height="wrap_content" android:layout_width="fill_parent">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/txtJumlahTemplate"
+			android:gravity="right" android:layout_gravity="right"
+			android:paddingRight="5dp" android:textColor="#FFFF00"></TextView>
+	</FrameLayout>
+	<ListView android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:id="@+id/listViewTemplate"
+		android:background="#00000000" android:cacheColorHint="#00000000"
+		android:divider="@drawable/divider">
+	</ListView>
+
+
+</LinearLayout>

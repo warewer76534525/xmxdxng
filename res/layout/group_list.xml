@@ -1,0 +1,29 @@
+<LinearLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/app_background" android:orientation="vertical">
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_height="wrap_content" android:background="#281300" android:layout_width="fill_parent">
+		<TextView android:text="Group" android:id="@+id/TextView01"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="17sp" android:padding="5dp">
+		</TextView>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:padding="5dp" android:textColor="#FFFFFF" android:id="@+id/txtTotalGroup">
+		</TextView>
+	</LinearLayout>
+	<RelativeLayout android:id="@+id/RelativeLayout02"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:padding="5dp">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textColor="#FFFFFF"
+			android:id="@+id/txtEmpty" android:layout_centerHorizontal="true"
+			android:text="Belum ada group yang terdaftar. Silahkan klik tombol Tambah Group untuk membuat group baru."></TextView>
+		<ListView android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:id="@+id/listViewGroup"
+			android:layout_above="@+id/btnAddGroup" android:layout_alignParentTop="true" android:divider="@drawable/divider" android:cacheColorHint="#00000000" android:background="#00000000"></ListView>
+		<Button android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:layout_alignParentBottom="true"
+			android:text="Tambah Group" android:background="@drawable/button_brown"
+			android:textColor="#FFFFFF" android:id="@+id/btnAddGroup"></Button>
+	</RelativeLayout>
+</LinearLayout>

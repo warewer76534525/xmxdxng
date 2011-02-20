@@ -1,0 +1,8 @@
+<LinearLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="#281300">
+	<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="Pengaturan SMS Otomatis"
+		android:textColor="#FFFFFF" android:textStyle="bold" android:padding="5dp"></TextView>
+</LinearLayout>

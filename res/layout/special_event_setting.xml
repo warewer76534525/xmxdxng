@@ -1,0 +1,2 @@
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"><TextView android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pengaturan belum tersedia. Silakan klik dan tahan Special Event untuk meng-edit waktu notifikasi." android:textColor="#FFFFFF"></TextView>
+</LinearLayout>

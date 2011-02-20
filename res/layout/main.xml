@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/app_background">
+	<FrameLayout android:id="@+id/FrameLayout01"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:background="#281300">
+		<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Log"
+			android:textColor="#FFFFFF" android:padding="5dp" android:textSize="15sp"
+			android:textStyle="bold"></TextView>
+	</FrameLayout>
+	<TextView android:text="Belum ada daftar log/aktifitas. Silakan tekan menu dan mulai menyusun SMS schedule kamu. Jangan lupa untuk mengirim kritik dan saran pada menu Kritik dan Saran." android:id="@+id/txtEmpty"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:textColor="#FFFFFF" android:layout_gravity="center_horizontal" android:padding="5dp">
+	</TextView>
+	<ListView android:id="@+id/listViewLog" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:divider="@drawable/divider"
+		android:background="#00000000" android:cacheColorHint="#00000000"></ListView>
+</LinearLayout>

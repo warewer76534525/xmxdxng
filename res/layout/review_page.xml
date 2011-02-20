@@ -1,0 +1,27 @@
+<ScrollView android:id="@+id/ScrollView01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/app_background">
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:orientation="vertical" android:padding="5dp">
+		<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Saran, kritik, dan pertanyaan kamu akan direspon melalui email kamu. Untuk melihat kritik, saran, dan pertanyaan dari teman-teman lain, bisa dilihat di website: http://smsdong.triplelands.com."
+			android:textColor="#FFFFFF"></TextView>
+		
+		
+		<TextView android:id="@+id/TextView03" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Kritik/saran/pertanyaan:"
+			android:textColor="#FFFFFF" android:paddingTop="10dp"></TextView>
+		<EditText android:singleLine="false" android:layout_width="fill_parent"
+			android:id="@+id/txtSaran" android:layout_height="100dp"></EditText>
+		<FrameLayout android:id="@+id/FrameLayout01"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:padding="5dp" android:layout_gravity="center">
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Kirim"
+				android:id="@+id/btnKirim"></Button>
+		</FrameLayout>
+	</LinearLayout>
+</ScrollView>

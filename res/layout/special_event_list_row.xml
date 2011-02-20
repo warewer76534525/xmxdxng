@@ -1,0 +1,21 @@
+<LinearLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent">
+	<LinearLayout android:id="@+id/LinearLayout02"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:padding="5dp">
+		<ImageView android:id="@+id/ImageView01"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gift"></ImageView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/LinearLayout03"
+		android:layout_height="wrap_content" android:orientation="vertical"
+		android:layout_width="fill_parent" android:padding="5dp">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/txtNameEvent"
+			android:text="Name" android:textColor="#FFFFFF" android:textStyle="bold"
+			android:textSize="15sp"></TextView>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/txtTimeEvent"
+			android:text="Time" android:textColor="#FFFF00"></TextView>
+	</LinearLayout>
+</LinearLayout>

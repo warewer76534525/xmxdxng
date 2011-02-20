@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="Pengaturan SMS Otomatis"
+		android:layout="@layout/preference_category_time">
+		<CheckBoxPreference android:title="Konfirmasi"
+			android:defaultValue="true" android:summary="Tampilkan jendela konfirmasi setiap ada SMS Schedule yang akan dikirim."
+			android:key="checkboxAutoPref" />
+		<ListPreference android:title="Waktu kirim SMS otomatis"
+			android:summary="Bila saya tidak menjawab konfirmasi dalam waktu ini, kirim SMS otomatis."
+			android:key="listTimeAutoPref" android:defaultValue="0"
+			android:entries="@array/listArray" android:entryValues="@array/listValues" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Pengaturan Footer SMS"
+		android:layout="@layout/preference_category_footer">
+		<CheckBoxPreference android:title="Gunakan Footer"
+			android:defaultValue="false" android:summary="Gunakan footer, ditambahkan di akhir setiap SMS yang akan dikirimkan."
+			android:key="checkboxFooterPref" />
+		<EditTextPreference android:name="txtFooter"
+			android:summary="Footer yang akan muncul di setiap SMS yang dikirimkan."
+			android:defaultValue="Nama Saya" android:title="Text Footer"
+			android:key="editTextFooterPref" />
+	</PreferenceCategory>
+</PreferenceScreen>

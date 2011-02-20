@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="listArray">
+		<item>3 menit</item>
+		<item>5 menit</item>
+		<item>10 menit</item>
+		<item>15 menit</item>
+		<item>20 menit</item>
+		<item>Jangan kirim sebelum saya jawab</item>
+	</string-array>
+	<string-array name="listValues">
+		<item>180000</item>
+		<item>300000</item>
+		<item>600000</item>
+		<item>900000</item>
+		<item>1200000</item>
+		<item>0</item>
+	</string-array>
+</resources>

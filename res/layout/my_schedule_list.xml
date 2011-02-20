@@ -1,0 +1,29 @@
+<RelativeLayout android:id="@+id/RelativeLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView android:layout_below="@id/FrameLayout01" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:textColor="#FFFFFF" 
+		android:id="@+id/txtEmpty" 
+		android:layout_centerHorizontal="true" 
+		android:text="Tidak ada schedule yang aktif" 
+		android:layout_alignParentTop="true">
+	</TextView>
+	<ListView android:id="@+id/listViewSchedule"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_above="@+id/FrameLayout01"
+		android:layout_alignParentTop="true" android:background="#00000000"
+		android:cacheColorHint="#00000000" android:divider="@drawable/divider">
+	</ListView>
+	<FrameLayout android:id="@+id/FrameLayout01"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_alignParentBottom="true" android:padding="5dp">
+		<Button android:layout_below="@id/TextView01"
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:id="@+id/btnAddSchedule" android:text="Tambah Schedule"
+			android:background="@drawable/button_brown" android:textColor="#FFFFFF"></Button>
+	</FrameLayout>
+
+
+</RelativeLayout>

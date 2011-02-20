@@ -1,0 +1,22 @@
+<LinearLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/app_background" android:orientation="vertical">
+	<FrameLayout android:id="@+id/FrameLayout06"
+		android:layout_width="fill_parent" android:background="#281300"
+		android:layout_height="wrap_content">
+		<TextView android:layout_height="wrap_content"
+			android:textColor="#FFFFFF" android:textStyle="bold"
+			android:layout_width="wrap_content" android:text="Kategori Template SMS"
+			android:layout_gravity="center_vertical" android:id="@+id/txtSubTitleKategori"
+			android:padding="5dp">
+		</TextView>
+	</FrameLayout>
+	<ListView android:layout_height="wrap_content"
+		android:layout_width="fill_parent" 
+		android:id="@+id/listViewKategori"
+		android:background="#00000000"
+		android:cacheColorHint="#00000000" 
+		android:divider="@drawable/divider">
+	</ListView>
+</LinearLayout>
