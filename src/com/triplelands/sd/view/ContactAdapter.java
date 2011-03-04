@@ -7,6 +7,7 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 
 import com.triplelands.sd.sms.Contact;
 
@@ -15,11 +16,13 @@ public class ContactAdapter extends BaseAdapter {
 	private List<Contact> listContact;
 	private List<Contact> listSelectedContact;
 	private Context context;
+	private Button btnPick;
+	private Contact contact;
 
-	public ContactAdapter(Context ctx, List<Contact> listContact) {
-		this.listContact = listContact;
+	public ContactAdapter(Context ctx, Button btn) {
 		this.context = ctx;
 		listSelectedContact = new ArrayList<Contact>();
+		btnPick = btn;
 	}
 
 	public int getCount() {
@@ -34,12 +37,20 @@ public class ContactAdapter extends BaseAdapter {
 		return position;
 	}
 	
+	public void setListContact(List<Contact> listContact){
+		this.listContact = listContact;
+	}
+	
+	public void setSelectedContacts(List<Contact> selectedList){
+		listSelectedContact = selectedList;
+	}
+	
 	public List<Contact> getSelectedContacts(){
 		return listSelectedContact;
 	}
 
 	public View getView(final int position, View convertView, ViewGroup viewGroup) {
-		Contact contact = listContact.get(position);
-		return new ContactAdapterView(context, contact, listSelectedContact);
+		contact = listContact.get(position);
+		return new ContactAdapterView(context, contact, listSelectedContact, btnPick);
 	}
 }

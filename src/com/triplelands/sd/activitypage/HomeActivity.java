@@ -133,6 +133,9 @@ public class HomeActivity extends BaseCustomTitle {
 			case R.id.menuClearLog:
 				clearLog();
 				break;
+			case R.id.menuSmsBomber:
+				startActivity(new Intent(this, SMSBomberActivity.class));
+				break;
 		}
 		return false;
 	}

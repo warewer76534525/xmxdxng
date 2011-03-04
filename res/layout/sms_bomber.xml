@@ -1,0 +1,11 @@
+<ScrollView android:id="@+id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/app_background">
+<LinearLayout android:id="@+id/LinearLayout02" android:layout_height="wrap_content" android:layout_width="fill_parent"><LinearLayout android:id="@+id/LinearLayout01" android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="vertical" android:padding="5dp"><TextView android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:text="Silakan masukkan nomor tujuan dan jumlah SMS yang akan dikirimkan. (Tidak direkomendasikan untuk mengirim puluhan bahkan ratusan SMS yang sama ke nomor teman atau kerabat Anda)" android:padding="5dp"></TextView>
+<EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:hint="Nomor tujuan" android:id="@+id/txtNomorTujuanBomber" android:singleLine="true" android:numeric="decimal"></EditText><EditText android:layout_width="fill_parent" android:id="@+id/txtSMSBomber" android:hint="Isi SMS" android:layout_height="75dp" android:gravity="top"></EditText>
+<EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/txtJumlahSms" android:hint="Jumlah SMS" android:numeric="integer" android:singleLine="true"></EditText>
+<FrameLayout android:id="@+id/FrameLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="5dp" android:layout_gravity="center"><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bomb!!" android:background="@drawable/button_brown" android:textColor="#FFFFFF" android:id="@+id/btnBomb"></Button>
+</FrameLayout>
+
+</LinearLayout><LinearLayout android:id="@+id/LinearLayout03" android:layout_height="wrap_content" android:layout_width="fill_parent">
+</LinearLayout>
+</LinearLayout>
+</ScrollView>

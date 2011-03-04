@@ -6,8 +6,8 @@ import android.telephony.SmsManager;
 
 public class SmsSender {
 	
-	private void send(String phoneNumber, String messageToSent) {
-
+	public void send(String phoneNumber, String messageToSent) {
+		
 		PhoneNumber number = PhoneNumber.parse(phoneNumber);
 
 		SmsManager sms = SmsManager.getDefault();

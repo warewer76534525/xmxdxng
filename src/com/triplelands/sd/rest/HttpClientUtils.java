@@ -50,7 +50,7 @@ public class HttpClientUtils {
 			e.printStackTrace();
 		}
 		
-		return JsonUtils.<T>toListObject(cleanJson(result), type);
+		return JsonUtils.toListObject(cleanJson(result), type);
 	}
 
 	public static <T> T getList2(String url, Type type) {
@@ -68,7 +68,7 @@ public class HttpClientUtils {
 			e.printStackTrace();
 		}
 		
-		return JsonUtils.<T>toListObject2(cleanJson(result), type);
+		return JsonUtils.toListObject2(cleanJson(result), type);
 	}
 	
 	public static <T> T get(String url, Class<T> clazz) {
@@ -86,7 +86,7 @@ public class HttpClientUtils {
 			e.printStackTrace();
 		}
 		
-		return JsonUtils.<T>toObject(cleanJson(result), clazz);
+		return JsonUtils.toObject(cleanJson(result), clazz);
 	}
 	
 	private static String cleanJson(String result) {

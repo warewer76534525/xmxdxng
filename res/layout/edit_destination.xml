@@ -1,0 +1,9 @@
+<ScrollView android:id="@+id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/app_background"><LinearLayout android:id="@+id/LinearLayout01" android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="fill_parent" android:padding="10dp"><FrameLayout android:id="@+id/FrameLayout01" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingBottom="10dp"><TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/txtContacts" android:textColor="#FFFFFF"></TextView>
+</FrameLayout>
+<FrameLayout android:id="@+id/FrameLayout03" android:layout_height="wrap_content" android:layout_width="fill_parent">
+<ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/contact_group" android:layout_gravity="center" android:padding="5dp" android:id="@+id/btnPickDestination"></ImageButton>
+</FrameLayout><FrameLayout android:id="@+id/FrameLayout02" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingTop="10dp"><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnSubmitDestination" android:text="Submit" android:background="@drawable/button_brown" android:textColor="#FFFFFF" android:layout_gravity="center"></Button>
+</FrameLayout>
+
+</LinearLayout>
+</ScrollView>

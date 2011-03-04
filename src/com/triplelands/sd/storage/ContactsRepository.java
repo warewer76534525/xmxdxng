@@ -13,7 +13,7 @@ public abstract class ContactsRepository {
 	 * Static singleton instance of {@link ContactAccessor} holding the
 	 * SDK-specific implementation of the class.
 	 */
-	
+
 	private static ContactsRepository sInstance;
 
 	public static ContactsRepository getInstance() {
@@ -21,7 +21,7 @@ public abstract class ContactsRepository {
 			String className;
 
 			int sdkVersion = Integer.parseInt(Build.VERSION.SDK);
-			
+
 			if (sdkVersion < Build.VERSION_CODES.ECLAIR) {
 				className = "com.triplelands.sd.storage.ContactsOldRepository";
 			} else {
@@ -40,5 +40,5 @@ public abstract class ContactsRepository {
 		return sInstance;
 	}
 
-	public abstract List<Contact> getContacts(Activity activity);
+	public abstract List<Contact> getContacts(Activity activity, String filter);
 }

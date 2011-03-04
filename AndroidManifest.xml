@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.triplelands.sd.activitypage" android:versionCode="5"
-	android:versionName="1.0.3">
+	package="com.triplelands.sd.activitypage" android:versionCode="6"
+	android:versionName="1.0.4">
 
 	<uses-permission android:name="android.permission.SEND_SMS" />
 	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
@@ -23,6 +23,7 @@
 		</activity>
 		<activity android:name=".ContactListActivity" android:theme="@android:style/Theme.Dialog"/>
 		<activity android:name=".FeedBackActivity" />
+		<activity android:name=".SMSBomberActivity" />
 		<activity android:name=".group.PickGroupActivity" android:theme="@android:style/Theme.Dialog"/>
 		<activity android:name=".group.AddGroupActivity" />
 		<activity android:name=".group.GroupListActivity" />
@@ -32,13 +33,16 @@
 		<activity android:name=".myschedule.MyScheduleSettingActivity" />
 		<activity android:name=".myschedule.MyScheduleSMSTemplateActivity" android:theme="@android:style/Theme.Dialog"/>
 		<activity android:name=".myschedule.AddMyScheduleActivity" />
+		<activity android:name=".myschedule.EditSchedule" />
+		<activity android:name=".myschedule.EditDestination" />
 		<activity android:name=".specialevent.SpecialEventActivity" />
 		<activity android:name=".specialevent.SpecialEventListActivity" />
 		<activity android:name=".specialevent.SpecialEventSettingActivity" />
 		<activity android:name=".specialevent.EventTemplateListActivity" />
 		<activity android:name=".smstemplate.SmsContentActivity" />
 		<activity android:name=".smstemplate.SmsCategoryListActivity" />
-		<activity android:name=".smstemplate.SmsTemplatesListActivity" />
+		<activity android:name=".smstemplate.SmsTemplatesListActivity"/>
+		<activity android:name=".smstemplate.NewTemplateActivity" android:theme="@android:style/Theme.Dialog"/>
 		<activity android:name=".ConfirmationActivity" android:theme="@android:style/Theme.Dialog" android:screenOrientation="portrait"/>
 		<activity android:name="com.triplelands.sd.app.BugReportActivity" android:theme="@android:style/Theme.NoTitleBar"/>
 
@@ -53,5 +57,5 @@
 		</receiver>
 	</application>
 
-	<uses-sdk android:minSdkVersion="7" />
+	<uses-sdk android:minSdkVersion="4" />
 </manifest> 

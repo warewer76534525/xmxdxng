@@ -49,7 +49,7 @@
 						</FrameLayout>
 					</LinearLayout>
 					<EditText android:layout_width="fill_parent" android:id="@+id/txtScheduleMessage"
-						android:singleLine="false" android:layout_height="125dp"></EditText>
+						android:singleLine="false" android:layout_height="125dp" android:gravity="top"></EditText>
 					<LinearLayout android:id="@+id/LinearLayout02"
 						android:layout_width="fill_parent" android:layout_height="wrap_content">
 						<FrameLayout android:id="@+id/FrameLayout04"

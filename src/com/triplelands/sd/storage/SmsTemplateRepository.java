@@ -32,6 +32,19 @@ public class SmsTemplateRepository extends Repository {
 
 		_database.insert(SMS_TEMPLATE_TABLE, null, newSmsValues);
 	}
+	
+	public void updateTemplate(int idTemplate, String title, String isi){
+		ContentValues newSmsValues = new ContentValues();
+
+		newSmsValues.put("title", title);
+		newSmsValues.put("isi", isi);
+		
+		_database.update(SMS_TEMPLATE_TABLE, newSmsValues, "_id=" + idTemplate, null);
+	}
+	
+	public void deleteTemplate(int idTemplate){
+		_database.delete(SMS_TEMPLATE_TABLE, "_id=" + idTemplate, null);
+	}
 
 	public Cursor getAllCategories() {
 		return _database.query(CATEGORY_TABLE, new String[] { "_id", "name" },

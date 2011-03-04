@@ -120,6 +120,25 @@ public class SmsTaskRepository extends Repository {
 		cursor.close();
 		return task;
 	}
+	
+	public void update (int id, List<Contact> destinations){
+		ContentValues updateValues = new ContentValues();
+
+		Type listType = new TypeToken<List<Contact>>() {
+		}.getType();
+		
+		updateValues.put("destination", JsonUtils.toListJson(destinations, listType));
+		_database.update(DATABASE_TABLE, updateValues, "_id=" + id, null);
+	}
+	
+	public void update(int id, String name, String message){
+		ContentValues updateValues = new ContentValues();
+
+		updateValues.put("name", name);
+		updateValues.put("message", message);
+
+		_database.update(DATABASE_TABLE, updateValues, "_id=" + id, null);
+	}
 
 	public void update(int id, SmsTask smsTask) {
 		ContentValues updateValues = new ContentValues();

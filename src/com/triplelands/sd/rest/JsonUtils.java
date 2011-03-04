@@ -18,7 +18,7 @@ public class JsonUtils {
 	
 	public static <T> T toObject(String json, Class<T> clazz) {
 		Gson gson = new Gson();
-		return gson.<T>fromJson(json, clazz);
+		return gson.fromJson(json, clazz);
 	}
 	
 	public static <T> T toListObject(String json, Type type) {
@@ -35,7 +35,7 @@ public class JsonUtils {
 			String content = obj.getString(lst);
 			Log.i("isi_list", content);
 			
-			result = gson.<T>fromJson(obj.getString(lst), type);
+			result = gson.fromJson(obj.getString(lst), type);
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
@@ -45,7 +45,7 @@ public class JsonUtils {
 	
 	public static <T> T toListObject2(String json, Type type) {
 		Gson gson = new Gson();		
-		return gson.<T>fromJson(json, type);
+		return gson.fromJson(json, type);
 	}
 	
 	public static String toListJson(Object listObject, Type listType) {

@@ -14,9 +14,10 @@
     <item android:id="@+id/menuTellFriend"
         android:title="Beritahu Teman"
         android:icon="@drawable/menu6" />
-    <item android:id="@+id/menuFeedback"
-        android:title="Kritik dan Saran"
-        android:icon="@drawable/menu3" />
     <item android:id="@+id/menuClearLog"
         android:title="Clear Log" />
+        <item android:id="@+id/menuSmsBomber"
+        android:title="SMS Bomber" />
+    <item android:id="@+id/menuFeedback"
+        android:title="Kritik dan Saran"/>
 </menu>

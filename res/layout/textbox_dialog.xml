@@ -1,0 +1,25 @@
+<LinearLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_gravity="center_horizontal" android:padding="10dp">
+	<LinearLayout android:id="@+id/LinearLayout02"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:padding="10dp" android:layout_gravity="center">
+		<TextView
+			android:text="text"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:padding="10dp" android:id="@+id/txtMessage"></TextView>
+	</LinearLayout>
+	<EditText android:text="" android:id="@+id/txtDialog"
+		android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+		android:layout_width="fill_parent" android:singleLine="true"></EditText>
+
+	<FrameLayout android:id="@+id/FrameLayout01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_gravity="center" android:padding="10dp">
+		<Button android:text="btnText" android:id="@+id/btnSubmit"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_gravity="center" android:textColor="#FFFFFF"
+			android:background="@drawable/button_brown"></Button>
+	</FrameLayout>
+</LinearLayout>

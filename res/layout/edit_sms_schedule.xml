@@ -1,0 +1,29 @@
+<ScrollView android:id="@+id/ScrollView01" xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" 
+		android:background="@drawable/app_background"
+		android:layout_height="fill_parent">
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+	    android:orientation="vertical">
+		<FrameLayout android:id="@+id/FrameLayout01"
+			android:layout_height="wrap_content" android:padding="10dp"
+			android:layout_width="fill_parent">
+			<EditText android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:hint="Judul Schedule" android:id="@+id/txtJudulSchedule"></EditText>
+		</FrameLayout>
+		<FrameLayout android:id="@+id/FrameLayout02"
+			android:layout_height="wrap_content" android:padding="10dp"
+			android:layout_width="fill_parent">
+			<EditText android:layout_width="fill_parent" android:gravity="top" android:hint="Isi sms schedule" android:id="@+id/txtContentSchedule" android:layout_height="150dp"></EditText>
+		</FrameLayout>
+		<FrameLayout android:id="@+id/FrameLayout03"
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:padding="10dp">
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/button_brown"
+				android:layout_gravity="center"
+				android:text="Submit" android:textColor="#FFFFFF" android:id="@+id/btnEditSchedule"></Button>
+		</FrameLayout>
+	</LinearLayout>
+</ScrollView>

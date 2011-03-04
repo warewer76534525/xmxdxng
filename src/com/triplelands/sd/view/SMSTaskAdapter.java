@@ -34,6 +34,7 @@ public class SMSTaskAdapter extends CursorAdapter {
 		LayoutInflater inflater = LayoutInflater.from(context);
 		View v = inflater.inflate(R.layout.my_schedule_list_row, parent, false);
 		bindView(v, context, cursor);
+		v.setTag(cursor.getInt(cursor.getColumnIndexOrThrow("_id")));
 		return v;
 	}
 

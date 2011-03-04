@@ -58,7 +58,7 @@ public class GroupMemberAdapter extends BaseAdapter {
 		return convertView;
 	}
 	
-	private static class ViewHolder {
+	public static class ViewHolder {
 		public TextView txtName;
 		public TextView txtNumber;
 	}
