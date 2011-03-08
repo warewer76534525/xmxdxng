@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.triplelands.sd.activitypage" android:versionCode="6"
-	android:versionName="1.0.4">
+	package="com.triplelands.sd.activitypage" android:versionName="1.0.6" android:versionCode="8">
 
 	<uses-permission android:name="android.permission.SEND_SMS" />
 	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>

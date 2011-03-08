@@ -93,9 +93,11 @@ public class ContactListActivity extends Activity implements LoadContactHandler{
 	
 	private List<Contact> filterContact(List<Contact> source, String filter){
 		List<Contact> filtered = new ArrayList<Contact>();
-		for(int i = 0; i < source.size(); i++){
-			if(source.get(i).getName().toLowerCase().contains(filter.toLowerCase())){
-				filtered.add(source.get(i));
+		if(source != null){
+			for(int i = 0; i < source.size(); i++){
+				if(source.get(i).getName().toLowerCase().contains(filter.toLowerCase())){
+					filtered.add(source.get(i));
+				}
 			}
 		}
 		return filtered;
